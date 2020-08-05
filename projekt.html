@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #bt{
+                color: black;
+                background-color: lightslategray;
+                bottom: none;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            .ps{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .tab{
+             text-align: center;
+             font-family: Arial, Helvetica, sans-serif;
+              font-size: 17px;
+              border-collapse: collapse;
+              
+            }
+        </style>
+        <title>Automata</title>
+        <script src="automat.js"></script>
+        <script src="gjenero_tab.js"></script>
+        <script src="kontroll_input.js"></script>
+        <script src="konverto_ne_afjd.js"></script>
+        <script src="konverto_ne_afd.js"></script>
+        <script src="minimizo.js"></script>
+        <link rel="stylesheet" href="projekt.css">
+    </head>
+    <body style="padding-left: 70px;">
+
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Ju lutem vendosni te dhenat e kerkuara per automatin e-Afjd:</h2>
+
+        <form>
+            <p style="font-family: Arial, Helvetica, sans-serif;">Ju lutem mos harroni te shenoni epsilonin me germen "e" kur vendosni alfabetin.</p>
+            Alfabeti:<input type="text" id="alfabeti"> <br><br>
+            Gjendjet:<input type="text" id="gjendjet"> 
+            <input type="button" value="Gjenero tabelen e kalimeve" id="bt" onclick="gjenero_tab()"><br><br>
+            Gjendja fillestare:<input type="text" id="gjfill"><br><br>
+            Gjendjet fundore:<input type="text" id="gjf"><br><br>
+            Tabela e kalimeve:
+
+            <div id="table">
+
+            </div>
+            <br>
+
+            <input type="button" id="bt" value="Konverto ne Afjd" onclick="konverto_ne_afjd()" > 
+        </form>
+
+
+        <div id="tab_afjd">
+            <p class="ps" id="pershkrimi_afjd"></p>
+        </div>
+        <br>
+        <div id="but_afd"></div>
+
+        <div id="tab_afd">
+            <p class="ps"  id="pershkrimi_afd"></p>
+        </div>
+
+        <br>
+
+        <div id="minimizo"></div>
+        <br>
+
+        <div id="tab_min">
+            <p class="ps"  id="min_pershkrim"></p>
+        </div>
+        
+
+        <p id="demooo"></p>
+
+
+        <table>
+        
+        </table>
+    </body>
+</html>
